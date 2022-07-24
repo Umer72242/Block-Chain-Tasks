@@ -1,0 +1,22 @@
+pragma solidity ^0.8.15;
+
+contract Ass1 {
+    string private name;
+    uint private age;
+    
+    function setName(string memory Name1) public {
+        name = Name1;
+    }
+    
+    function getName() public view returns (string memory) {
+        return name;
+    }
+    
+    function setAge(uint newAge) public {
+        age = newAge;
+    }
+    
+    function getAge() public view returns (uint) {
+        return age;
+    }
+}
